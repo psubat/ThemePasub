@@ -4,7 +4,7 @@ namespace ThemePasub\Providers;
 
 use Plenty\Plugin\ServiceProvider;
 
-class ThemeServiceProvider extends ServiceProvider
+class ThemePasubServiceProvider extends ServiceProvider
 {
 
 	/**

@@ -4,7 +4,7 @@ namespace ThemePasub\Containers;
 
 use Plenty\Plugin\Templates\Twig;
 
-class ThemeContainer
+class ThemePasubContainer
 {
     public function call(Twig $twig):string
     {
