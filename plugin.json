@@ -6,13 +6,13 @@
     "keywords"              : ["theme", "Ceres", "template"],
     "type"                  :"theme",
     "require"               : [],
-    "serviceProvider"       :"ThemePasub\\Providers\\ThemeServiceProvider",
+    "serviceProvider"       :"ThemePasub\\Providers\\ThemePasubServiceProvider",
     "dataProviders"         :
     [
         {
-            "key"           :"ThemePasub\\Containers\\ThemeContainer",
-            "name"          :"Dark background",
-            "description"   :"Change the background colour of the Ceres template"
+            "key"           :"ThemePasub\\Containers\\ThemePasubContainer",
+            "name"          :"ThemePasub",
+            "description"   :"Change the styling of the Ceres template"
         }
     ]
 }
