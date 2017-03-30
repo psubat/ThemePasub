@@ -2,6 +2,11 @@ body {
     background-color: rgba(0,0,0,0.05);
 }
 
+#page-body{
+  background-image: url('../resources/img/swirl.png.');
+  background-repeat: repeat;
+}
+
 .top-bar{
   background-color: #666;
 }
