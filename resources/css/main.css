@@ -3,12 +3,13 @@ body {
 }
 
 #page-body{
-  background-image: url('../resources/img/swirl.png.');
+  background-image: url('ThemePasub/resources/img/swirl.png.');
   background-repeat: repeat;
+  height: 600px;
 }
 
 .top-bar{
-  background-color: #666;
+  background-color: #fff;
 }
 
 .navbar{
@@ -17,5 +18,5 @@ body {
 
 .footer{
   background-color: rgba(0,0,0,0.8) !important;
-  color: #000;
+  color: #fff;
 }
