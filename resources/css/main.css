@@ -2,3 +2,8 @@
 body {
     background-color: yellow;
 }
+
+top-bar{
+  height: 200px;
+  background-color: #ffffff;
+}
