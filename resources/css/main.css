@@ -1,9 +1,16 @@
-/* Change background colour */
 body {
-    background-color: yellow;
+    background-color: rgba(0,0,0,0.05);
 }
 
-top-bar{
-  height: 200px;
-  background-color: #ffffff;
+.top-bar{
+  background-color: #666;
+}
+
+.navbar{
+  background-color: rgb(252,252,252) !important;
+}
+
+.footer{
+  background-color: rgba(0,0,0,0.8) !important;
+  color: #000;
 }
