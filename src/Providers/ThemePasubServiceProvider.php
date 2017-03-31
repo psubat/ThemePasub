@@ -28,4 +28,12 @@ class ThemePasubServiceProvider extends ServiceProvider
 				 $partial->set('footer', 'ThemePasub::content.ThemeFooter');
 			}, 99);
 	}
+
+	public function boot(Twig $twig, Dispatcher $eventDispatcher)
+	{
+			$eventDispatcher->listen('IO.init.templates', function(Partial $partial)
+			{
+				 $partial->set('head', 'ThemePasub::content.Head');
+			}, 99);
+	}
 }
