@@ -25,15 +25,8 @@ class ThemePasubServiceProvider extends ServiceProvider
 	{
 			$eventDispatcher->listen('IO.init.templates', function(Partial $partial)
 			{
-				 $partial->set('footer', 'ThemePasub::content.ThemeFooter');
-			}, 99);
-	}
-
-	public function boot(Twig $twig, Dispatcher $eventDispatcher)
-	{
-			$eventDispatcher->listen('IO.init.templates', function(Partial $partial)
-			{
-				 $partial->set('head', 'ThemePasub::content.Head');
+				 $partial->set('footer', 'ThemePasub::PageDesign.Partials.ThemeFooter');
+				 $partial->set('head', 'ThemePasub::PageDesign.Partials.Head');
 			}, 99);
 	}
 }
