@@ -26,20 +26,15 @@ body {
 }
 
 .top-bar{
-  background-color: #2d3959;
-  height: 300px;
-  text-align: center;
 }
 
 .navbar{
-  background-color: rgba(0,0,0,0.1) !important;
 }
 
 .footer{
   background-color: rgba(0,0,0,0.8) !important;
   color: #fff;
   height: 400px;
-  text-align: center;
 
   position: absolute;
   bottom: 0;
