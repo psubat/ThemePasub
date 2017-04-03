@@ -13,9 +13,9 @@ use Plenty\Plugin\ConfigRepository;
 use IO\Helper\ComponentContainer;
 
 
-class CeresHipsterServiceProvider extends ServiceProvider
+class ThemePasubServiceProvider extends ServiceProvider
 {
-    const EVENT_LISTENER_PRIORITY = 99;
+    const EVENT_LISTENER_PRIORITY = 1;
     /**
      * Register the service provider.
      */
