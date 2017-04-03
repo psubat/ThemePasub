@@ -8,6 +8,6 @@ class ThemePasubContainer
 {
     public function call(Twig $twig):string
     {
-        return $twig->render('ThemePasub::content.Theme');
+        return $twig->render('ThemePasub::Theme');
     }
 }
