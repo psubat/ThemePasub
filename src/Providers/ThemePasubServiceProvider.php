@@ -27,7 +27,7 @@ class ThemePasubServiceProvider extends ServiceProvider
 
 		$eventDispatcher->listen('IO.init.templates', function (Partial $partial) {
 				$partial->set('head', 'ThemePasub::PageDesign.Partials.Head');
-				$partial->set('header', 'ThemePasub::PageDesign.Partials.Header.Header');
+				//$partial->set('header', 'ThemePasub::PageDesign.Partials.Header.Header');
 				$partial->set('footer', 'ThemePasub::PageDesign.Partials.ThemeFooter');
 				$partial->set('page-design', 'ThemePasub::PageDesign.PageDesign');
 			}, 1);
