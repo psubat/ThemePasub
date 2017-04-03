@@ -27,11 +27,7 @@ class ThemePasubServiceProvider extends ServiceProvider
     public function boot(Twig $twig, Dispatcher $eventDispatcher)
     {
         $eventDispatcher->listen('IO.init.templates', function (Partial $partial) {
-
-
 					$partial->set('footer', 'ThemePasub::PageDesign.Partials.ThemeFooter');
-
-
         }, self::EVENT_LISTENER_PRIORITY);
     }
 }
