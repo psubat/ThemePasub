@@ -1,12 +1,3 @@
-{% import "Ceres::PageDesign.Macros.LayoutContainer" as LayoutContainer %}
-
-{{ component( "Ceres::Customer.Components.UserLoginHandler" ) }}
-{{ component( "Ceres::PageDesign.Components.ShippingCountrySelect" ) }}
-{{ component( "Ceres::PageDesign.Components.ShopLanguageSelect" ) }}
-{{ component( "Ceres::ItemList.Components.ItemSearch" ) }}
-
-{% set lang = services.sessionStorage.getLang() %}
-
 <header class="top-bar">
     <div class="container-max">
         <div class="row">
@@ -49,42 +40,3 @@
 
 
 </header>
-
-
-<!-- breadcrumb -->
-{% if not services.template.isHome() and not services.template.isMyAccount() and not services.template.isCheckout() %}
-    {% include "Ceres::PageDesign.Partials.Header.Breadcrumb" %}
-{% endif %}
-
-<div class="container-max page-header">
-    <div class="row">
-        <div id="searchBox" class="cmp cmp-search-box collapse {% if services.template.isSearch() %} in {% endif %}">
-            <item-search template="#vue-item-search"></item-search>
-        </div>
-
-        <div id="countrySettings" class="cmp cmp-country-settings collapse">
-            <div class="country-settings-inner row">
-
-                <div class="language-settings col-xs-12 col-sm-6">
-                    <div class="list-title">
-                        <strong>{{ trans("Ceres::Template.generalSelectLanguage") }}</strong>
-                        <hr>
-                    </div>
-                    <shop-language-select template="#vue-shop-language-select" country-flag-prefix="flag-icon-"/>
-                </div>
-
-                <div class="shipping-settings col-xs-12 col-sm-6">
-                    <div class="list-title">
-                        <strong>{{ trans("Ceres::Template.generalSelectShippingCountry") }}</strong>
-                        <hr>
-                    </div>
-                    <shipping-country-select template="#vue-shipping-country-select" country-flag-prefix="flag-icon-"/>
-                </div>
-            </div>
-        </div>
-
-
-
-
-    </div>
-</div>
