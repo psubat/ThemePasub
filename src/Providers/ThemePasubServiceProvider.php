@@ -1,6 +1,6 @@
 <?php
 
-namespace CeresHipster\Providers;
+namespace ThemePasub\Providers;
 
 use IO\Extensions\Functions\Partial;
 use IO\Helper\CategoryKey;
