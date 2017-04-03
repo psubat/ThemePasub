@@ -10,6 +10,8 @@ body {
 
 .top-bar{
   background-color: #2d3959;
+  height: 300px;
+  text-align: center;
 }
 
 .navbar{
