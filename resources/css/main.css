@@ -9,11 +9,11 @@ body {
 }
 
 .top-bar{
-  background-color: #fff;
+  background-color: #2d3959;
 }
 
 .navbar{
-  background-color: rgb(252,252,252) !important;
+  background-color: rgba(0,0,0,0.1) !important;
 }
 
 .footer{
